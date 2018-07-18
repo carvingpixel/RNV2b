@@ -102,6 +102,3 @@ render() {
 
   
   export default Home;
-
-  
-
