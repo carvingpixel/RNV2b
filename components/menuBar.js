@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Image, Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {Alert, Image, Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import {Greeting} from './house';
 

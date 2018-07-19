@@ -4,68 +4,59 @@ import {
   Text,
   View
 } from 'react-native';
-import { createBottomTabNavigator } from 'react-navigation';
+import createBottomTabNavigator from 'react-navigation';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Home from './screens/Home';
 import Threat from './screens/Threat';
 import Rescue from './screens/Rescue';
 import Contact from './screens/Contact';
 import Achtung from './screens/Achtung';
 
-// export default createBottomTabNavigator({
-//   Home: Home,
-//   Threat: Threat,
-//   Rescue: Rescue,
-//   Contact: Contact,
-//   Achtung: Achtung,
-//   // Settings: SettingsScreen,
-// });
 
 export default createBottomTabNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
       tabBarLabel: 'Home',
-      // tabBarIcon: ({ tintColor }) => (
-      //   <FontAwesome name="shield" color={tintColor} size={24} />
-      // )
+      tabBarIcon: ({ tintColor }) => (
+        <FontAwesome name="shield" color={tintColor} size={24} />
+      )
     }
   },
   Threat: {
     screen: Threat,
     navigationOptions: {
       tabBarLabel: 'Threat',
-      // tabBarIcon: ({ tintColor }) => (
-      //   <FontAwesome name="flash" color={tintColor} size={24} />
-      // )
+      tabBarIcon: ({ tintColor }) => (
+        <FontAwesome name="flash" color={tintColor} size={24} />
+      )
     }
   },
   Rescue: {
     screen: Rescue,
     navigationOptions: {
       tabBarLabel: 'Rescue',
-      // tabBarIcon: ({ tintColor }) => (
-      //   <FontAwesome name="medkit" color={tintColor} size={24} />
-      // )
-      //ios-medkit
+      tabBarIcon: ({ tintColor }) => (
+        <FontAwesome name="medkit" color={tintColor} size={24} />
+      )  // ios-medkit
     }
   },
   Contact: {
     screen: Contact,
     navigationOptions: {
       tabBarLabel: 'Contact',
-      // tabBarIcon: ({ tintColor }) => (
-      //   <FontAwesome name="users" color={tintColor} size={24} />
-      //   // ios-contacts
-      // )
+      tabBarIcon: ({ tintColor }) => (
+        <FontAwesome name="users" color={tintColor} size={24} />
+      )  // ios-contacts
     }
   },
   Achtung: {
     screen: Achtung,
     navigationOptions: {
       tabBarLabel: 'Achtung',
-      // tabBarIcon: ({ tintColor }) => (
-      //   <FontAwesome name="warning" color={tintColor} size={24} />
-      // ) // ios-warning
+      tabBarIcon: ({ tintColor }) => (
+        <FontAwesome name="warning" color={tintColor} size={24} />
+      ) // ios-warning
     }
   }
 }, 
