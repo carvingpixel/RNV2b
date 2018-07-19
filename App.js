@@ -4,7 +4,7 @@ import {
   Text,
   View
 } from 'react-native';
-import createBottomTabNavigator from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Home from './screens/Home';
 import Threat from './screens/Threat';
