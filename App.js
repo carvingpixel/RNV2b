@@ -11,7 +11,7 @@ import Threat from './screens/Threat';
 import Rescue from './screens/Rescue';
 import Contact from './screens/Contact';
 import Achtung from './screens/Achtung';
-
+// successful app with icons and tabs at pre drawer step hogwarts
 
 export default createBottomTabNavigator({
   Home: {
