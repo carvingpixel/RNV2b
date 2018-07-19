@@ -11,7 +11,6 @@ import Rescue from './screens/Rescue';
 import Contact from './screens/Contact';
 import Achtung from './screens/Achtung';
 
-
 // export default createBottomTabNavigator({
 //   Home: Home,
 //   Threat: Threat,
@@ -61,9 +60,9 @@ export default createBottomTabNavigator({
     }
   },
   Location: {
-    screen: Location,
+    screen: Achtung,
     navigationOptions: {
-      tabBarLabel: 'Location',
+      tabBarLabel: 'Achtung',
       // tabBarIcon: ({ tintColor }) => (
       //   <FontAwesome name="warning" color={tintColor} size={24} />
       // ) // ios-warning
@@ -72,7 +71,7 @@ export default createBottomTabNavigator({
 }, 
 {//router config
     initialRouteName: 'Home',
-    order: ['Home','Threat','Rescue','Contact','Location'],
+    order: ['Home','Threat','Rescue','Contact','Achtung'],
     //navigation for complete tab navigator
     navigationOptions: {
      // tabBarVisible: true,
