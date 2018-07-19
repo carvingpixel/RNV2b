@@ -6,36 +6,84 @@ import {
 } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 import Home from './screens/Home';
+import Threat from './screens/Threat';
+import Rescue from './screens/Rescue';
+import Contact from './screens/Contact';
 import Achtung from './screens/Achtung';
 
-<Home />
 
-// class HomeScreen extends React.Component {
-//   render() {
-//     return (
-//       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//         <Text>Nav Homes</Text>
-//       </View>
-//     );
-//   }
-// }
-
-// class SettingsScreen extends React.Component {
-//   render() {
-//     return (
-//       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//         <Text>Nav Settings!</Text>
-//       </View>
-//     );
-//   }
-// }
-
+// export default createBottomTabNavigator({
+//   Home: Home,
+//   Threat: Threat,
+//   Rescue: Rescue,
+//   Contact: Contact,
+//   Achtung: Achtung,
+//   // Settings: SettingsScreen,
+// });
 
 export default createBottomTabNavigator({
-  Home: Home,
-  Achtung: Achtung,
-  // Settings: SettingsScreen,
-});
-
-
+  Home: {
+    screen: Home,
+    navigationOptions: {
+      tabBarLabel: 'Home',
+      // tabBarIcon: ({ tintColor }) => (
+      //   <FontAwesome name="shield" color={tintColor} size={24} />
+      // )
+    }
+  },
+  Threat: {
+    screen: Threat,
+    navigationOptions: {
+      tabBarLabel: 'Threat',
+      // tabBarIcon: ({ tintColor }) => (
+      //   <FontAwesome name="flash" color={tintColor} size={24} />
+      // )
+    }
+  },
+  Rescue: {
+    screen: Rescue,
+    navigationOptions: {
+      tabBarLabel: 'Rescue',
+      // tabBarIcon: ({ tintColor }) => (
+      //   <FontAwesome name="medkit" color={tintColor} size={24} />
+      // )
+      //ios-medkit
+    }
+  },
+  Contact: {
+    screen: Contact,
+    navigationOptions: {
+      tabBarLabel: 'Contact',
+      // tabBarIcon: ({ tintColor }) => (
+      //   <FontAwesome name="users" color={tintColor} size={24} />
+      //   // ios-contacts
+      // )
+    }
+  },
+  Location: {
+    screen: Location,
+    navigationOptions: {
+      tabBarLabel: 'Location',
+      // tabBarIcon: ({ tintColor }) => (
+      //   <FontAwesome name="warning" color={tintColor} size={24} />
+      // ) // ios-warning
+    }
+  }
+}, 
+{//router config
+    initialRouteName: 'Home',
+    order: ['Home','Threat','Rescue','Contact','Location'],
+    //navigation for complete tab navigator
+    navigationOptions: {
+     // tabBarVisible: true,
+    },
+      tabBarOptions: {
+        showLabel: true, // hide labels
+        activeTintColor: '#fff', // active icon color f8f8f8f   f7f7ef  7A6040 Mr fff
+        inactiveTintColor: '#aaa',  // inactive icon color 586589  7a5f3f MR B8A387
+        style: {
+            backgroundColor: '#523E92' // TabBar background   E0DCD7  MR 523E92
+        }
+    }
+  });
 
