@@ -59,7 +59,7 @@ export default createBottomTabNavigator({
       // )
     }
   },
-  Location: {
+  Achtung: {
     screen: Achtung,
     navigationOptions: {
       tabBarLabel: 'Achtung',
