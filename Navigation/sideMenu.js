@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import styles from './SideMenu.style';
 import {NavigationActions} from 'react-navigation';
-import {ScrollView, Text, View, Image, TouchableOpacity} from 'react-native';
+import {ScrollView, Text, View } from 'react-native';
 
 class SideMenu extends Component {
 

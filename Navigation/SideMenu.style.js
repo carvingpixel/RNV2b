@@ -1,42 +1,35 @@
 export default {
     container: {
-      marginTop:2,
-      paddingTop: 20,
       flex: 1,
-      backgroundColor: '#F1F3F9'
+      backgroundColor: '#444'
     },
     mastStyle: {
-        paddingVertical: 15,
-        paddingLeft: 5,
-        backgroundColor: '#333', //  E0DCD7 
+      paddingTop: 16,
+      paddingLeft: 10,
+      backgroundColor: 'yellow',
     },
     mastMenu: {
-        color: '#F1F3F9',
-        fontSize:20,
-        position: 'absolute',
-        top: 14,
-        left: 50, 
+      color: '#111',
+      padding: 10,
+      fontSize:20,
     },
     navItemStyle: {
       padding: 10,
+      color: '#fff',
     },
     navSectionStyle: {
-      backgroundColor: '#F1F3F9',
       paddingLeft: 10,
+      backgroundColor: '#444',
+      color: '#fff',
     },
     sectionHeadingStyle: {
-        backgroundColor: '#fff',
-        borderTopWidth: 1,
-        borderBottomWidth: 1,
-        borderColor: '#777',
-        paddingVertical: 10,
-      paddingLeft: 5,
+      color: '#fff',
     },
     footerContainer: {
       padding: 20,
-      backgroundColor: '#333'
+      backgroundColor: 'yellow',
     },
     footerText:{
-        color: '#F1F3F9'
+        color: '#222'
     },
   };

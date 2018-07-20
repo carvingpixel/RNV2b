@@ -89,6 +89,6 @@ export const Tabs = createBottomTabNavigator({
   },{
     contentComponent: SideMenu,
     drawerPosition: 'right',
-    drawerWidth: 250
+    drawerWidth: 275
   }
   );
